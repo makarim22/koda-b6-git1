@@ -1,5 +1,6 @@
 import Celsius from "./celcius.js";
 import Reamur from "./reamur.js";
+import Kelvin from "./kelvin.js";
 
 function main(temp){
     Celsius.set(temp);
@@ -7,6 +8,9 @@ function main(temp){
 
     Reamur.set(temp);
     console.log(Reamur.toCelsius(), Reamur.toKelvin(), Reamur.toFahrenheit());
+
+    Kelvin.set(temp);
+    console.log(Kelvin.toCelsius(), Kelvin.toReamur(), Kelvin.toFahrenheit());
 }
 
 main(100);
